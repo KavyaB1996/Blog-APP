@@ -188,7 +188,7 @@ app.post("/api/signup",async(req,res)=>{
 
         let user=new UserInfo({ username: req.body.username, 
         email: req.body.email,
-        password: bcrpt.hashSync(req.body.pwd,10) })
+        password: req.body.pwd })
 
         let result= user.save( (err,data)=>{
         if(err){
