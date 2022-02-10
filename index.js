@@ -3,8 +3,6 @@ const express = require('express');
 //importing mongodb model
 const ArticleInfo = require('./src/model/BlogDB')
 const UserInfo = require('./src/model/BlogUsers')
-const bcrpt=require('bcrypt')
-const jwt=require('jsonwebtoken')
 
 //obj intialization
 const app = express();
