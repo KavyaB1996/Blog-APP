@@ -279,19 +279,19 @@ app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname + '/build/index.html'))
    });
 
-//Back End Routing
-// app.get('/', (req,res)=>{
-//     res.send('Blog Server Up!!');
-// })
+Back End Routing
+app.get('/', (req,res)=>{
+    res.send('Blog Server Up!!');
+})
 
-// app.post('/', (req,res)=>{
-//     res.send(`Hi ${req.body.name} Post Method Working!!`);
-// })
+app.post('/', (req,res)=>{
+    res.send(`Hi ${req.body.name} Post Method Working!!`);
+})
 
-// app.get('/article/:name', (req,res)=>{
-//     const name = req.params.name;
-//     res.send(`${name}...URL params working`);
-// })
+app.get('/article/:name', (req,res)=>{
+    const name = req.params.name;
+    res.send(`${name}...URL params working`);
+})
 
 
 //Port number
