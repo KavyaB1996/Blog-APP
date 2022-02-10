@@ -1,0 +1,13 @@
+GET http://localhost:5000/
+Content-Type: application/json
+
+### get article info
+GET http://localhost:5000/article/Kavya
+Content-Type: application/json
+
+### post article info
+
+POST  http://localhost:5000/
+Content-Type: application/json
+# give one line spacing, otherwise taken as header
+{"name" : "Kavya"}
