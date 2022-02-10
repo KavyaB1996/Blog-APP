@@ -275,9 +275,7 @@ app.post('/api/login', async (req, res) => {
 //     }
 // })
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/build/index.html'))
-   });
+
 
 // Back End Routing
 app.get('/', (req,res)=>{
@@ -293,6 +291,9 @@ app.get('/article/:name', (req,res)=>{
     res.send(`${name}...URL params working`);
 })
 
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/build/index.html'))
+   });
 
 //Port number
 app.listen(process.env.PORT || 5000, ()=>{
