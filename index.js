@@ -279,7 +279,7 @@ app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname + '/build/index.html'))
    });
 
-Back End Routing
+// Back End Routing
 app.get('/', (req,res)=>{
     res.send('Blog Server Up!!');
 })
